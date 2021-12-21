@@ -81,3 +81,14 @@ export interface LaunchLink {
     article: string | null,
     wikipedia: string | null
 }
+
+export interface LaunchFilter {
+    rocketId: string,
+    launchId: string
+    minPrice: number
+    maxPrice: number
+    countCapsules: number
+    countCrew: number
+    countShips: number
+    isClear: boolean
+}
