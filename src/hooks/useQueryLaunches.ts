@@ -39,7 +39,7 @@ export const useQueryLaunches = (
         }
 
         fetchInitialLaunches(rocketId, page, limit);
-    }, [rocketId, page, limit])
+    }, [rocketId, page, limit, upcoming])
 
 
 
