@@ -91,3 +91,7 @@ export interface LaunchesByRocketListProps {
     title: string;
     upcoming: boolean;
 }
+
+export interface LaunchesInCartListProps {
+    launchesInCart: Launch[];
+}
