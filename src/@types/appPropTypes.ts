@@ -1,5 +1,11 @@
 import { Launch, Rocket } from "./appTypes";
 
+export interface IconProps {
+    className?: string;
+    width: number;
+    height: number;
+}
+
 export interface RocketImageProps {
     images: string[]
 }
