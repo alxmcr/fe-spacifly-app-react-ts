@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.rockets {
+  &__title {
+    color: $primary;
+    text-shadow: 2px 2px 2px $dark;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
