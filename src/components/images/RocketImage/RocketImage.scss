@@ -1,0 +1,21 @@
+@import "../../../variables";
+
+.rocketimage {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+}
+
+@media screen and (min-width: $screen-md) {
+  .rocketimage {
+    height: $rocket-image-md-height;
+    width: $rocket-image-md-width;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+    .rocketimage {
+      height: $rocket-image-lg-height;
+      width: $rocket-image-lg-width;
+    }
+  }
