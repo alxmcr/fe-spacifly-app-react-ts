@@ -1,6 +1,6 @@
 # 🚀 Spacifly App
 
-An web application built where any person can travel around all the galaxy 🚀.
+An web application built where any person can travel around all the galaxy 🚀. Spacifly hire the best SpaceX's rockets to make the best travel experience.
 
 ![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640111712/Portfolio/spacifly-images/home-page_rfdyoq.png)
 
@@ -13,6 +13,7 @@ An web application built where any person can travel around all the galaxy 🚀.
 - Booking cart
 - SEO
 - Unit Testing
+- Consuming REST API ([SpaceX-API](https://github.com/r-spacex/SpaceX-API))
 
 ## Lessons Learned
 
