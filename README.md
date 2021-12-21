@@ -96,6 +96,12 @@ http://localhost:3000
 
 - [Alejandro M. Coca Rojas (@alxmcr)](https://www.github.com/alxmcr)
 
+## Credits
+
+- [SpaceX-API](https://github.com/r-spacex/SpaceX-API)
+- Photos by [NASA](https://unsplash.com/@nasa)
+- Photos by [SpaceX](https://www.spacex.com/)
+
 ## Feedback
 
 If you have any feedback, please reach out to me at amcocarojas@gmail.com.
