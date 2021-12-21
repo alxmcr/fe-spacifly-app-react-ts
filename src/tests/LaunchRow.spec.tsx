@@ -13,7 +13,7 @@ beforeEach(() => {
   reduxStore = createStore(rootReducer);
 });
 
-describe("Testing: Launch row", () => {
+describe("LaunchRow component", () => {
   test("render launch card", () => {
     const { getByText } = render(
       <Provider store={reduxStore}>
