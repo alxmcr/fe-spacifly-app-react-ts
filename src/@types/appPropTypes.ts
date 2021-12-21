@@ -65,3 +65,7 @@ export interface LaunchesByRocketContainerProps {
 export interface FilterLaunchFormProps {
     rocketId: string;
 }
+
+export interface LaunchFilterContainerProps {
+    rocketId: string;
+}
