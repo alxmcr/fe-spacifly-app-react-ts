@@ -42,14 +42,14 @@ export default function LaunchRow({ launch }: LaunchRowProps) {
                 className="launchrow__button launchrow__button--icon launchrow__button--active"
                 onClick={handleRemoveFromCart}
               >
-                <RemoveIcon className="launchrow__icon" width={18} height={18} />
+                x
               </button>
             ) : (
               <button
                 className="launchrow__button launchrow__button--icon"
                 onClick={handleAddToCart}
               >
-                <CartIcon className="launchrow__icon" width={18} height={18} />
+                Add <CartIcon className="launchrow__icon" width={18} height={18} />
               </button>
             )}
           </>
