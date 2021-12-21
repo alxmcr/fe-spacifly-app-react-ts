@@ -6,7 +6,12 @@ export const AppLogo = () => {
   return (
     <div className="app-logo">
       <Link to="/" className="app-logo__link">
-        <img src={logo} alt="logo" className="app-logo__image" loading="lazy" />
+        <img
+          src={logo}
+          className="app-logo__image"
+          alt="Spacifly app"
+          loading="lazy"
+        />
       </Link>
       <Link to="/" className="app-logo__link app-logo__link--name">
         Spacifly

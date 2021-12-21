@@ -11,6 +11,7 @@ export default function RocketPhysicalSpecsContainer({
         <img
           src={rocket?.flickr_images[1]}
           className="physicalspecs__image"
+          alt={`Rocket specs`}
           loading="lazy"
         />
       ) : null}
