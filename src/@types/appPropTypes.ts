@@ -61,3 +61,7 @@ export interface LaunchesByRocketContainerProps {
     title: string;
     upcoming: boolean;
 }
+
+export interface FilterLaunchFormProps {
+    rocketId: string;
+}

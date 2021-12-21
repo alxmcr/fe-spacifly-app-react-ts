@@ -1,0 +1,93 @@
+@import "../../../variables";
+
+.filter {
+  align-items: center;
+  background-color: $light;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  &__button {
+    align-items: center;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    height: $button-height;
+    width: 100%;
+  }
+  &__buttonnumber {
+    height: $button-icon-height;
+    width: $button-icon-height;
+    border-radius: 50%;
+    &--selected {
+      background-color: $primary;
+      color: $light;
+    }
+  }
+  &__button,
+  &__buttonnumber {
+    appearance: none;
+    border: 1px solid $shadow;
+    box-shadow: 1px 2px 1px $shadow;
+    outline: none;
+    padding: 0.5rem;
+    &:hover {
+      background-color: $primary;
+      color: $light;
+      transform: scale(1.02);
+    }
+    & svg {
+      fill: $light;
+    }
+  }
+
+  &__buttons {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  &__icon {
+    height: $button-icon-height;
+    width: $button-icon-width;
+  }
+  &__input {
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid $primary;
+    height: $input-height;
+    outline: none;
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+  &__label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  &__row {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .filter {
+    &__button {
+      width: $button-width;
+    }
+    &__actions {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
