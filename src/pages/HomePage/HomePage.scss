@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.home {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 46, 153, 0.52),
+      rgba($primary, 0.73)
+    ),
+    url(../../../../assets/images/bg-home-page.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  &__actions {
+    padding: 0.5rem 0;
+  }
+  &__cta {
+    align-items: center;
+    background-color: $dark;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 1px $primary;
+    color: $light;
+    display: flex;
+    justify-content: center;
+    height: $button-height;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px $dark;
+    width: $button-width;
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
+  }
+  &__features,
+  &__goal {
+    color: $light;
+    font-size: $font-size-app-details;
+    line-height: 1.25;
+    margin: 0;
+    text-shadow: 1px 2px 1px $dark;
+  }
+  &__name {
+    color: $primary;
+    font-size: $font-size-app-name;
+    margin: 1rem 0;
+    text-shadow: 1px 2px 1px $dark;
+  }
+}
