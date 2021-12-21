@@ -1,0 +1,40 @@
+@import "../../../variables";
+
+.physicalspecs {
+  &__image {
+    width: 100%;
+  }
+  &__specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  &__speclabel {
+    margin: 0;
+    text-align: center;
+  }
+  &__specvalue {
+    color: $primary;
+    font-size: $font-size-stat-value;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+  &__subtitle {
+    color: $primary;
+    font-size: $font-size-subtitle;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .physicalspecs {
+    &__specifications {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+  }
+}
