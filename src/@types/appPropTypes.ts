@@ -29,3 +29,11 @@ export interface LaunchRowProps {
 export interface TotalCartRowProps {
     launchesInCart: Launch[];
 }
+
+export interface AppPaginationProps {
+    totalPages?: number,
+    page: number,
+    hasPrevPage?: boolean,
+    hasNextPage?: boolean,
+    setPage: (page: number) => void
+}
