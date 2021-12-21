@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.rocketpage {
+  padding: 0.5rem;
+  &__subtitle {
+    color: $primary;
+  }
+  &__title {
+    color: $primary;
+    text-shadow: 2px 2px 2px $dark;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .rocketpage {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
