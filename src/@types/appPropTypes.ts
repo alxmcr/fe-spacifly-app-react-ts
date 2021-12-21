@@ -1,4 +1,4 @@
-import { Rocket } from "./appTypes";
+import { Launch, Rocket } from "./appTypes";
 
 export interface RocketImageProps {
     images: string[]
@@ -16,4 +16,16 @@ export interface AppSpinnerProps {
 export interface AppOverlayProps {
     showOverlay: boolean;
     children: React.ReactNode;
+}
+
+export interface LaunchInCartRowProps {
+    launch: Launch;
+}
+
+export interface LaunchRowProps {
+    launch: Launch;
+}
+
+export interface TotalCartRowProps {
+    launchesInCart: Launch[];
 }
