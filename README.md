@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+# ✈️ Spacifly App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An web application built where any person can travel around all the galaxy 🚀.
 
-## Available Scripts
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640111712/Portfolio/spacifly-images/home-page_rfdyoq.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Rocket listing
+- Rocket details
+- Launch details
+- Launch pagination
+- Booking cart
+- SEO
+- Unit Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Lessons Learned
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I learned more about React.js, React Hooks, Redux (Reducers, Actions, Store), Sass, React Context, and TypeScript.
 
-### `npm test`
+## Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone project
 
-### `npm run build`
+```bash
+  git clone https://github.com/alxmcr/spacifly-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Go to project directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd spacifly-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install NPM dependencies
 
-### `npm run eject`
+```bash
+  npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Start the server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Open the browser:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+http://localhost:3000
+```
 
-## Learn More
+## Rutas Habilitadas en la aplicación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Home (`/`)
+- Rockets (`/rockets`)
+- Rocket details (`/rockets/:rocketId`)
+- Booking cart (`/cart`)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
+
+[https://spacifly-app.netlify.app/](https://spacifly-app.netlify.app/)
+
+## Screenshoots
+
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640111713/Portfolio/spacifly-images/home-page-mobile_tcivx9.png)
+
+![Rockets page - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640111712/Portfolio/spacifly-images/rockets-page_vdc10c.png)
+
+![Rocket page - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640124078/Portfolio/spacifly-images/spacify-rocket-page-complete_siaukc.png)
+
+![Launch filter - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640124168/Portfolio/spacifly-images/spacifly-launch-filter_xmpivz.png)
+
+![Cart page: Customer form - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1640124077/Portfolio/spacifly-images/spacifly-cart_rrnyom.png)
+
+## Tech Stack
+
+- `typescript`: "^4.4.4"
+- `@testing-library/jest-dom`: "^5.14.1"
+- `@testing-library/react`: "^11.2.7"
+- `@testing-library/user-event`: "^12.8.3"
+- `react`: "^17.0.2"
+- `react-dom`: "^17.0.2"
+- `react-redux`: "^7.2.6"
+- `react-router-dom`: "^5.3.0"
+- `redux`: "^4.1.2"
+- `redux-devtools-extension`: "^2.13.9"
+- `sass`: "^1.43.4"
+
+## Testing
+
+![Testing app](https://res.cloudinary.com/images-alex-projects/image/upload/v1640124077/Portfolio/spacifly-images/spacifly-testing_wkcdf5.png)
+
+## Authors
+
+- [Alejandro M. Coca Rojas (@alxmcr)](https://www.github.com/alxmcr)
+
+## Feedback
+
+If you have any feedback, please reach out to me at amcocarojas@gmail.com.
