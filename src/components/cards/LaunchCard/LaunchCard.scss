@@ -1,0 +1,52 @@
+@import "../../../variables";
+
+.launchcard {
+  align-items: center;
+  border: 1px solid $primary;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+  &__actions {
+    width: 100%;
+  }
+  &__button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid $shadow;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 1px $shadow;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+    &:hover {
+      background-color: $primary;
+      color: $light;
+      transform: scale(1.05);
+    }
+  }
+  &__cost {
+    font-weight: 800;
+    text-align: center;
+  }
+  &__image {
+    height: $launch-image-md-height;
+    width: $launch-image-md-width;
+    margin: 0.5rem 0;
+  }
+  &__name,
+  &__destination,
+  &__date {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .launchcard {
+    height: $launch-row-md-height;
+    min-width: $launch-card-md-width;
+  }
+}

@@ -45,3 +45,7 @@ export interface AppToolbarProps {
     hasNextPage: boolean,
     hasPrevPage: boolean,
 }
+
+export interface LaunchCardProps {
+    launch: Launch;
+}
