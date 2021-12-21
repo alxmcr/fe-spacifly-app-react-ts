@@ -1,4 +1,4 @@
-import { Launch } from "../@types/appTypes";
+import { Launch, Rocket } from "../@types/appTypes";
 
 export const mockLaunch: Launch = {
     links: {
@@ -44,3 +44,35 @@ export const mockLaunch: Launch = {
     ticketCostUSD: 15487987,
     destination: "Mars",
 };
+
+export const mockRocket: Rocket = {
+    height: {
+        meters: 22.25,
+        feet: 73,
+    },
+    diameter: {
+        meters: 1.68,
+        feet: 5.5,
+    },
+    mass: {
+        kg: 30146,
+        lb: 66460,
+    },
+    flickr_images: [
+        "https://imgur.com/DaCfMsj.jpg",
+        "https://imgur.com/azYafd8.jpg",
+    ],
+    name: "Falcon 1",
+    type: "rocket",
+    active: false,
+    stages: 2,
+    boosters: 0,
+    cost_per_launch: 6700000,
+    success_rate_pct: 40,
+    first_flight: "2006-03-24",
+    country: "Republic of the Marshall Islands",
+    company: "SpaceX",
+    description:
+        "The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.",
+    id: "5e9d0d95eda69955f709d1eb",
+}
