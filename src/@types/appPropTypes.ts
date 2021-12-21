@@ -77,3 +77,11 @@ export interface RocketHeroContainerProps {
 export interface RocketOverviewContainerProps {
     rocket: Rocket;
 }
+
+export interface RocketPhysicalSpecsContainerProps {
+    rocket: Rocket;
+}
+
+export interface RocketStatsContainerProps {
+    rocket: Rocket;
+}

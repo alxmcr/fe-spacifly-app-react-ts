@@ -1,0 +1,36 @@
+@import "../../../variables";
+
+.stats {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  &__statlabel {
+    margin: 0;
+    text-align: center;
+  }
+  &__statvalue {
+    color: $primary;
+    font-size: $font-size-stat-value;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+  &__subtitle {
+    color: $primary;
+    font-size: $font-size-subtitle;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .stats {
+    &__group {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      justify-content: space-between;
+    }
+  }
+}
