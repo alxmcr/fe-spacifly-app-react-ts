@@ -131,7 +131,7 @@ export default function FilterLaunchForm({
             <div key={index}>
               {countCapsules === index + 1 ? (
                 <button
-                  className="filterform__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filterform__buttonnumber--selected"
                   type="button"
                   name="capsules-quantity"
                 >
@@ -160,7 +160,7 @@ export default function FilterLaunchForm({
             <div key={index}>
               {countCrew === index + 1 ? (
                 <button
-                  className="filterform__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filterform__buttonnumber--selected"
                   type="button"
                   name="crew-quantity"
                 >
@@ -189,7 +189,7 @@ export default function FilterLaunchForm({
             <div key={index}>
               {countShips === index + 1 ? (
                 <button
-                  className="filterform__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filterform__buttonnumber--selected"
                   type="button"
                   name="ships-quantity"
                 >
