@@ -24,4 +24,10 @@
       text-decoration: underline;
     }
   }
+  &__by,
+  &__heart,
+  &__made,
+  &__name {
+    margin: 0;
+  }
 }
