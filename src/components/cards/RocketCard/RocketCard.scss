@@ -1,0 +1,60 @@
+@import "../../../variables";
+
+.rocketcard {
+  border-radius: 0.5rem;
+  &__column {
+    padding: 0.5rem;
+  }
+  &__description {
+    line-height: 1.75;
+    margin: 0;
+    text-align: justify;
+  }
+  &__footer {
+    padding: 1rem 0;
+  }
+  &__link {
+    background-color: $primary;
+    border-radius: 0.5rem;
+    color: $light;
+    display: block;
+    height: $button-height;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    &:hover {
+      background-color: $dark;
+      transform: scale(1.05);
+    }
+  }
+  &__name {
+    color: $primary;
+    font-size: $font-size-rocket-name;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .rocketcard {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    height: $rocket-card-md-height;
+    padding: 0.5rem;
+    width: $rocket-card-md-width;
+    &--odd {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .rocketcard {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    height: $rocket-card-lg-height;
+    padding: 0.5rem;
+    width: $rocket-card-lg-width;
+  }
+}
