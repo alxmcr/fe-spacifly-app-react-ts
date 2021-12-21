@@ -9,12 +9,20 @@
     background-color: transparent;
     border: 1px solid $primary;
     border-radius: 50%;
+    color: $primary;
     height: $button-icon-height;
-    width: $button-icon-width;
+    width: $button-icon-height;
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
   }
   &__header {
     display: flex;
     justify-content: space-between;
+  }
+  &__title {
+    color: $primary;
   }
 }
 
