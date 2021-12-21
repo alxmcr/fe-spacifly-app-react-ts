@@ -23,12 +23,13 @@
   }
   &__title {
     color: $primary;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: $screen-md) {
   .lauchfiltercontainer {
     height: $filter-container-height;
-    width: 70%;
+    width: 60%;
   }
 }

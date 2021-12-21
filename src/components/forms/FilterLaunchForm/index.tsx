@@ -75,13 +75,13 @@ export default function FilterLaunchForm({
   };
 
   return (
-    <form className="filter" onSubmit={handleFilter}>
-      <div className="filter__row">
-        <label htmlFor="launch-id" className="filter__label">
+    <form className="filterform" onSubmit={handleFilter}>
+      <div className="filterform__row">
+        <label htmlFor="launch-id" className="filterform__label">
           Launch ID:
         </label>
         <input
-          className="filter__input"
+          className="filterform__input"
           type="text"
           name="launch-id"
           id="launch-id"
@@ -90,13 +90,13 @@ export default function FilterLaunchForm({
           onChange={handleLaunchId}
         />
       </div>
-      <div className="filter__row">
-        <div className="filter__group">
-          <label htmlFor="min-price" className="filter__label">
+      <div className="filterform__row filterform__row--maxmin">
+        <div className="filterform__group">
+          <label htmlFor="min-price" className="filterform__label">
             Min. price (USD.):
           </label>
           <input
-            className="filter__input"
+            className="filterform__input"
             type="number"
             name="min-price"
             id="min-price"
@@ -106,12 +106,12 @@ export default function FilterLaunchForm({
             onChange={handleMinPrice}
           />
         </div>
-        <div className="filter__group">
-          <label htmlFor="max-price" className="filter__label">
+        <div className="filterform__group">
+          <label htmlFor="max-price" className="filterform__label">
             Max. price (USD.):
           </label>
           <input
-            className="filter__input"
+            className="filterform__input"
             type="number"
             name="max-price"
             id="max-price"
@@ -122,16 +122,16 @@ export default function FilterLaunchForm({
           />
         </div>
       </div>
-      <div className="filter__row">
-        <label htmlFor="capsules" className="filter__label">
+      <div className="filterform__row">
+        <label htmlFor="capsules" className="filterform__label">
           Capsules (click one):
         </label>
-        <div className="filter__buttons">
+        <div className="filterform__buttons">
           {quantityButtons.map((button, index) => (
             <div key={index}>
               {countCapsules === index + 1 ? (
                 <button
-                  className="filter__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filter__buttonnumber--selected"
                   type="button"
                   name="capsules-quantity"
                 >
@@ -139,7 +139,7 @@ export default function FilterLaunchForm({
                 </button>
               ) : (
                 <button
-                  className="filter__buttonnumber"
+                  className="filterform__buttonnumber"
                   type="button"
                   name="capsules-quantity"
                   onClick={() => handleCountCapsules(index + 1)}
@@ -151,16 +151,16 @@ export default function FilterLaunchForm({
           ))}
         </div>
       </div>
-      <div className="filter__row">
-        <label htmlFor="crew" className="filter__label">
+      <div className="filterform__row">
+        <label htmlFor="crew" className="filterform__label">
           Crew (click one):
         </label>
-        <div className="filter__buttons">
+        <div className="filterform__buttons">
           {quantityButtons.map((button, index) => (
             <div key={index}>
               {countCrew === index + 1 ? (
                 <button
-                  className="filter__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filter__buttonnumber--selected"
                   type="button"
                   name="crew-quantity"
                 >
@@ -168,7 +168,7 @@ export default function FilterLaunchForm({
                 </button>
               ) : (
                 <button
-                  className="filter__buttonnumber"
+                  className="filterform__buttonnumber"
                   type="button"
                   name="crew-quantity"
                   onClick={() => handleCrew(index + 1)}
@@ -180,16 +180,16 @@ export default function FilterLaunchForm({
           ))}
         </div>
       </div>
-      <div className="filter__row">
-        <label htmlFor="ships" className="filter__label">
+      <div className="filterform__row">
+        <label htmlFor="ships" className="filterform__label">
           Ships (click one):
         </label>
-        <div className="filter__buttons">
+        <div className="filterform__buttons">
           {quantityButtons.map((button, index) => (
             <div key={index}>
               {countShips === index + 1 ? (
                 <button
-                  className="filter__buttonnumber filter__buttonnumber--selected"
+                  className="filterform__buttonnumber filter__buttonnumber--selected"
                   type="button"
                   name="ships-quantity"
                 >
@@ -198,7 +198,7 @@ export default function FilterLaunchForm({
               ) : (
                 <button
                   key={index}
-                  className="filter__buttonnumber"
+                  className="filterform__buttonnumber"
                   type="button"
                   name="ships-quantity"
                   onClick={() => handleShips(index + 1)}
@@ -210,13 +210,13 @@ export default function FilterLaunchForm({
           ))}
         </div>
       </div>
-      <div className="filter__actions">
-        <button type="submit" className="filter__button">
+      <div className="filterform__actions">
+        <button type="submit" className="filterform__button">
           Filter
         </button>
         <button
           type="reset"
-          className="filter__button"
+          className="filterform__button"
           onClick={handleResetFilter}
         >
           Reset
