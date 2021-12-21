@@ -4,8 +4,9 @@
   align-items: center;
   background-color: $dark;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  height: $app-header-height;
+  min-height: $app-header-height;
   justify-content: space-between;
   padding: 0.5rem;
   position: sticky;
