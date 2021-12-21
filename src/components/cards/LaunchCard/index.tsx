@@ -11,16 +11,16 @@ import { addLaunch, removeLaunch } from "../../../redux/actions/cartActions";
 import "./LaunchCard.scss";
 
 export default function LaunchCard({ launch }: LaunchCardProps) {
-  if (launch === null || launch === undefined) return null;
-
   const dispatch = useDispatch();
-  const { id, name, destination, date_utc, upcoming, ticketCostUSD, links } =
-    launch;
-  const patch = links?.patch;
-
   const launchesInCart = useSelector<AppReduxState>(
     (state) => state.cart.cart
   ) as Launch[];
+
+  if (launch === null || launch === undefined) return null;
+
+  const { id, name, destination, date_utc, upcoming, ticketCostUSD, links } =
+    launch;
+  const patch = links?.patch;
 
   const handleAddToCart = () => {
     dispatch(addLaunch(launch));
@@ -34,14 +34,15 @@ export default function LaunchCard({ launch }: LaunchCardProps) {
     console.log("Win ticket");
   };
 
-  const results = () => {
-    console.log("Results");
-  };
-
   return (
     <article className="launchcard" id={id}>
       {!launch?.upcoming && patch?.small ? (
-        <img src={patch?.small} className="launchcard__image" loading="lazy" />
+        <img
+          src={patch?.small}
+          className="launchcard__image"
+          alt={`Logo launch#${id}`}
+          loading="lazy"
+        />
       ) : null}
       <div className="launchcard__content">
         <h3 className="launchcard__name">{name}</h3>
