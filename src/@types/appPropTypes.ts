@@ -12,3 +12,8 @@ export interface RocketCardProps {
 export interface AppSpinnerProps {
     color: "primary" | "secondary";
 }
+
+export interface AppOverlayProps {
+    showOverlay: boolean;
+    children: React.ReactNode;
+}
