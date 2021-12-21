@@ -40,7 +40,6 @@ export default function FilterLaunchForm({
   };
   const handleFilter = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Filter form submitted");
     const filter: LaunchFilter = {
       rocketId,
       launchId,

@@ -30,10 +30,6 @@ export default function LaunchCard({ launch }: LaunchCardProps) {
     dispatch(removeLaunch(launch));
   };
 
-  const winTicket = () => {
-    console.log("Win ticket");
-  };
-
   return (
     <article className="launchcard" id={id}>
       {!launch?.upcoming && patch?.small ? (
@@ -67,10 +63,6 @@ export default function LaunchCard({ launch }: LaunchCardProps) {
                 Add to cart
               </button>
             )}
-
-            <button className="launchcard__button" onClick={winTicket}>
-              Win a ticket
-            </button>
           </>
         ) : null}
       </div>
