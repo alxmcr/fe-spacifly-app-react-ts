@@ -8,3 +8,7 @@ export interface RocketCardProps {
     index: number;
     rocket: Rocket;
 }
+
+export interface AppSpinnerProps {
+    color: "primary" | "secondary";
+}
