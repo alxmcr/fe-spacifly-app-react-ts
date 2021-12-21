@@ -1,0 +1,76 @@
+@import "../../../variables";
+
+.launchincartrow {
+  border-bottom: 1px solid $primary;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  &__actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__button {
+    align-items: center;
+    border: 1px solid $primary;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    height: $button-height;
+    width: 100%;
+    &--active {
+      background-color: $primary;
+      color: $light;
+    }
+    &:hover {
+      background-color: $primary;
+      color: $light;
+      transform: scale(1.02);
+    }
+  }
+  &__icon {
+    fill: $dark;
+  }
+  &__name {
+    color: $primary;
+    margin: 0;
+    text-align: center;
+  }
+  &__cost {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  &__date {
+    margin: 0;
+    text-align: center;
+  }
+  &__destination {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .launchincartrow {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    &__button {
+      width: $launch-row-md-button-width;
+      &--icon {
+        width: auto;
+      }
+    }
+    &__content {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5rem;
+      width: 100%;
+    }
+  }
+}
