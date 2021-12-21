@@ -1,0 +1,13 @@
+@import "../../../variables";
+
+.launchesbyrocketlist {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__subtitle {
+    color: $primary;
+    font-size: $font-size-subtitle;
+  }
+}

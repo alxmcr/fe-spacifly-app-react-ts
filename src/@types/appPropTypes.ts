@@ -85,3 +85,9 @@ export interface RocketPhysicalSpecsContainerProps {
 export interface RocketStatsContainerProps {
     rocket: Rocket;
 }
+
+export interface LaunchesByRocketListProps {
+    rocketId: string;
+    title: string;
+    upcoming: boolean;
+}
