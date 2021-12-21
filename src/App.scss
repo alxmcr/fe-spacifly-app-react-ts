@@ -1,0 +1,17 @@
+@import "./variables";
+
+.App {
+  min-height: 100vh;
+}
+
+/* react-router-dom */
+.active {
+  background-color: $primary;
+  color: $light;
+  svg {
+    fill: $light;
+  }
+  span {
+    color: $light;
+  }
+}

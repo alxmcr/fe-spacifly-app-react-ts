@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Brand colors */
+$primary: #ff452b;
+$secondary: #f9f9f9;
+$tertiary: #949494;
+$border: #dfdfdf;
+$dark: #000;
+$error: #f17272;
+$close: $error;
+$cancel-operation: $error;
+$light: #fff;
+$overlay: #000000b3;
+$shadow: #2e212154;
+$hover: rgba($primary, 0.5);
+$primary-opacity: rgba($primary, 0.5);
+$dark-opacity: rgba($dark, 0.5);
+$text-hover: invert($hover);
+$border: #dfdfdf;
+$success: #00943b;
+$disabled: #949494;
+
+/* Typography */
+$font-family-headings: "Raleway", sans-serif;
+$font-family-body: "Lato", sans-serif;
+
+/* Font - Sizes */
+$font-size-base: 1rem;
+$font-size-rocket-name: 2.8rem;
+$font-size-app-name: 3.8rem;
+$font-size-app-details: 1.8rem;
+$font-size-subtitle: 2.4rem;
+$font-size-stat-value: 1.8rem;
+
+/* Padding & margin */
+$app-main-padding-right: 1rem;
+
+/* Details */
+$border-radius: 0.25rem;
+
+/* App: Height & Width */
+$app-footer-height: 8vh;
+$app-header-height: 10vh;
+$app-logo-height: 2rem;
+$app-navigation-height: $app-logo-height - 1rem;
+$app-navigation-list-height: 2rem;
+$app-main-height: 100vh - $app-header-height - $app-footer-height;
+
+/* Button */
+$button-border-radius: 1.25rem;
+$button-icon-height: 2.5rem;
+$button-icon-width: 3rem;
+$button-height: $button-icon-height;
+$button-width: 11rem;
+$button-padding: 0.5rem 1rem;
+$button-font-size: 1rem;
+$button-font-weight: 500;
+
+/* Inputs */
+$input-height: $button-icon-height;
+
+/* Spinner */
+$min-height-balls: 2rem;
+$width-balls: 2rem;
+$ball-height: 0.75rem;
+$ball-width: 0.75rem;
+$ball-gap: 2rem;
+$ball-padding: $ball-height;
+$ball-top: $ball-padding;
+
+/* Responsive design: media queries */
+$screen-sm: 36rem;
+$screen-md: 48rem;
+$screen-lg: 62rem;
+$screen-xl: 75rem;
+
+/* Card */
+$rocket-card-md-height: 27rem;
+$rocket-card-md-width: 45rem;
+$rocket-card-lg-height: 30rem;
+$rocket-card-lg-width: 58rem;
+$rocket-image-md-height: 15rem;
+$rocket-image-md-width: 35rem;
+$rocket-image-lg-height: 27rem;
+$rocket-image-lg-width: 32rem;
+
+/* Launch */
+$launch-row-sm-height: 12rem;
+$launch-row-md-height: 20rem;
+$launch-row-font-size: 1.75rem;
+$launch-row-name-font-size: 1.75rem;
+$launch-row-md-width: 57rem;
+$launch-row-md-button-width: 7rem;
+$launch-image-md-width: 8rem;
+$launch-image-md-height: 8rem;
+$launch-card-md-height: 20rem;
+$launch-card-md-width: 15rem;
+
+/* Pagination */
+$pagination-container-launches: $launch-row-md-height + 2rem;
+
+/* Filter */
+$filter-container-height: 44rem;
