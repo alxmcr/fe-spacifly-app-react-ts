@@ -1,0 +1,24 @@
+@import "../../../variables";
+
+.apptoolbar {
+  align-items: center;
+  display: flex;
+
+  &__button {
+    appearance: none;
+    background-color: $primary;
+      color: $light;
+    border: 1px solid $shadow;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 1px $shadow;
+    height: $button-height;
+    width: $button-width;
+    outline: none;
+    padding: 0.5rem;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+      transform: scale(1.05);
+    }
+  }
+}

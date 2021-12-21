@@ -37,3 +37,11 @@ export interface AppPaginationProps {
     hasNextPage?: boolean,
     setPage: (page: number) => void
 }
+
+export interface AppToolbarProps {
+    page: number,
+    setPage: (page: number) => void,
+    totalPages: number,
+    hasNextPage: boolean,
+    hasPrevPage: boolean,
+}
