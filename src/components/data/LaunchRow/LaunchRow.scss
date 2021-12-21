@@ -11,6 +11,8 @@
     gap: 0.5rem;
   }
   &__button {
+    appearance: none;
+    background-color: transparent;
     align-items: center;
     border: 1px solid $primary;
     border-radius: 0.5rem;
