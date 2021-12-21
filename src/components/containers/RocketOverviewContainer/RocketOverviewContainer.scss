@@ -1,0 +1,12 @@
+@import "../../../variables";
+
+.rocketoverview {
+  &__description {
+    line-height: 1.5;
+    text-align: justify;
+  }
+  &__subtitle {
+    color: $primary;
+    font-size: $font-size-subtitle;
+  }
+}
