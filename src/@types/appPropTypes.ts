@@ -49,3 +49,9 @@ export interface AppToolbarProps {
 export interface LaunchCardProps {
     launch: Launch;
 }
+
+export interface LaunchesByRocketContainerProps {
+    rocketId: string;
+    title: string;
+    upcoming: boolean;
+}
