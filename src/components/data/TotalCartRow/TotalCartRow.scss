@@ -1,0 +1,23 @@
+@import "../../../variables";
+
+.totalcartrow {
+  border-bottom: 1px solid $primary;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  &__text {
+    text-align: center;
+  }
+  &__total {
+    color: $primary;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .totalcartrow {
+  }
+}
