@@ -1,0 +1,47 @@
+@import "../../variables";
+
+.launchcartpage {
+  padding: 0.5rem;
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  &__link {
+    background-color: $primary;
+    border-radius: 0.5rem;
+    color: $light;
+    display: block;
+    height: $button-height;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: $button-width;
+    &:hover {
+      background-color: $dark;
+      transform: scale(1.05);
+    }
+  }
+  &__subtitle {
+    color: $primary;
+  }
+  &__text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  &__title {
+    color: $primary;
+    text-shadow: 2px 2px 2px $dark;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .launchcartpage {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

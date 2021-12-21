@@ -22,6 +22,12 @@
       background-color: $primary;
       color: $light;
     }
+    &--icon {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      height: $button-icon-height;
+    }
     &:hover {
       background-color: $primary;
       color: $light;
@@ -60,9 +66,6 @@
     width: 100%;
     &__button {
       width: $launch-row-md-button-width;
-      &--icon {
-        width: auto;
-      }
     }
     &__content {
       align-items: center;

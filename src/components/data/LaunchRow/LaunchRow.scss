@@ -23,10 +23,10 @@
       color: $light;
     }
     &--icon {
+      align-items: center;
       display: flex;
       gap: 0.5rem;
       height: $button-icon-height;
-      width: $button-icon-width;
     }
     &:hover {
       background-color: $primary;

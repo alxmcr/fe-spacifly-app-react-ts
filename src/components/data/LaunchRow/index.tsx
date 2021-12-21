@@ -9,7 +9,6 @@ import {
 import { checkIfLaunchBooked } from "../../../helpers/launchHelpers";
 import { addLaunch, removeLaunch } from "../../../redux/actions/cartActions";
 import { CartIcon } from "../../icons/CartIcon";
-import { RemoveIcon } from "../../icons/RemoveIcon";
 import "./LaunchRow.scss";
 
 export default function LaunchRow({ launch }: LaunchRowProps) {
@@ -42,14 +41,16 @@ export default function LaunchRow({ launch }: LaunchRowProps) {
                 className="launchrow__button launchrow__button--icon launchrow__button--active"
                 onClick={handleRemoveFromCart}
               >
-                x
+                Remove
+                <CartIcon className="launchrow__icon" width={18} height={18} />
               </button>
             ) : (
               <button
                 className="launchrow__button launchrow__button--icon"
                 onClick={handleAddToCart}
               >
-                Add <CartIcon className="launchrow__icon" width={18} height={18} />
+                Add{" "}
+                <CartIcon className="launchrow__icon" width={18} height={18} />
               </button>
             )}
           </>
