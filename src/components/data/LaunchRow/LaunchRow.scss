@@ -21,8 +21,12 @@
     height: $button-height;
     width: 100%;
     &--active {
-      background-color: $primary;
+      border: 1px solid $dark;
+      background-color: $dark;
       color: $light;
+      & svg {
+        fill: $light;
+      }
     }
     &--icon {
       align-items: center;
