@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.rockethero {
+  &__details {
+    color: rgba($dark, 0.75);
+    text-align: center;
+  }
+  &__heroimage {
+    width: 100%;
+  }
+}
