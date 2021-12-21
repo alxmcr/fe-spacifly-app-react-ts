@@ -1,4 +1,4 @@
-# ✈️ Spacifly App
+# 🚀 Spacifly App
 
 An web application built where any person can travel around all the galaxy 🚀.
 
